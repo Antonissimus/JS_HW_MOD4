@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Gulp Sass browserSync postCSS</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="modal-container">
+		<div class="modal-background">
+
+			<div class="modal ex1 hide">
+
+				<h2>Задание 1, 2, 3</h2>
+				<div class="container">
+
+					<div class="element">
+						<img src="img/budda1.jpg" alt="BUDDHA">
+						<p>Человеческие существа могут быть безмерно счастливы и безмерно несчастны — и они свободны в выборе. Эта свобода таит
+							опасность, эта свобода очень трудна, потому что ответственность ложится на вас. И с этой свободой что–то случилось,
+							что–то пошло не так. Каким–то образом человек оказался перевёрнутым вверх ногами.</p>
+					</div>
+
+					<div class="element">
+						<img src="img/budda2.jpg" alt="BUDDHA">
+						<p>Постепенно твоё настроение становится всё более ровным. Ты меньше радуешься и меньше печалишься; стираются все различия
+							между радостью и печалью. Потом наступает момент эмоционального равновесия — теперь ты не печален и не радостен. И
+							в этот момент приходит блаженство. Это спокойствие, это безмолвие, эта безмятежность и есть блаженство.</p>
+					</div>
+
+					<div class="element">
+						<img src="img/budda3.jpg" alt="BUDDHA">
+						<p>Больше нет ни вершин, ни долин, исчезают все противоположности. Ты останавливаешься ровно посередине. И чудо становится
+							всё более невероятным — когда ты приходишь к состоянию совершенного равновесия, происходит квантовый скачок: внезапно
+							ты осознаёшь то четвёртое измерение, о котором до сих пор не имел ни малейшего представления.</p>
+					</div>
+				</div>
+				<div class="btns">
+					<button id='toRed' class='btn'>Покрасить</button>
+					<button id='addShadow' class='btn'>Добавить тень</button>
+					<button id='addNumber' class='btn'>Пронумеровать</button>
+				</div>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex2 hide">
+				<h2>Задание 4</h2>
+				<p>Подсчитываем количество нажатий на кнопки.</p>
+				<div class="btns">
+					<button class='btn'>Кнопка раз</button>
+					<button class='btn'>Кнопка два</button>
+				</div>
+				<p class="answer"></p>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex3 hide">
+				<h2>Задание 5</h2>
+				<p>Вычисляем степень числа.</p>
+				<input id='base' type="text" placeholder="Введите число">
+				<input id='exp' type="text" placeholder="Введите степень числа">
+				<div class="btns">
+					<button id='toThePow' class='btn'>Возвести в степень.</button>
+				</div>
+				<p class="answer"></p>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex4 hide">
+				<h2>Задание 6</h2>
+				<h5>Выберите какой либо тег.</h5>
+				<p>Какая разница, кто сильнее, кто умнее, кто красивее, кто богаче? Ведь, в конечном итоге, имеет значение только то, счастливый
+					ли ты человек или нет.</p>
+				<p>Жизнью можно<span> наслаждаться</span>, жизни можно<span> радоваться</span>, можно стать частью её тайны, но понять её,
+					будучи сторонним наблюдателем, абсолютно
+					<span> невозможно.</span></p>
+				<p><strong> Жизнь – не механический процесс</strong>, и она не может быть безопасной. Это непредсказуемое таинство. Никто
+					не знает, что случится в следующее мгновение.</p>
+				<input id='tegName' type="text" placeholder="Введите название тега">
+				<div class="btns">
+					<button id='underLine' class='btn'>Подчеркнуть теги.</button>
+				</div>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex5 hide">
+				<h2>Задание 7,8</h2>
+				<h5>Введите свой возраст.</h5>
+				<input id='age' type="text" placeholder="Введите свой возраст">
+				<div class="btns">
+					<button id='ageBtn' class='btn'>Проверить</button>
+				</div>
+				<p class="answer"></p>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex6 hide">
+				<h2>Задание 9</h2>
+				<h5>Проверка фнкции, вычисляющей длину массива.</h5>
+				<div class="btns">
+					<button id='lengthCountBtn' class='btn'>Проверить</button>
+				</div>
+				<p class="answer"></p>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex7 hide">
+				<h2>Задание 10</h2>
+				<h5>Введите число.</h5>
+				<input id='num' type="text" placeholder="Введите сюда число">
+				<div class="btns">
+					<button id='getNumBtn' class='btn'>Проверить</button>
+				</div>
+				<p class="answer"></p>
+				<div class="close">OM</div>
+			</div>
+
+			<div class="modal ex8 hide">
+				<h2>Задание 11</h2>
+				<h5>Попробуйте угадать число от 1 до 10 :) </h5>
+				<input id='secretNum' type="text" placeholder="Ваш вариант">
+				<div class="btns">
+					<button id='getSecretNumBtn' class='btn'>Проверить</button>
+				</div>
+				<p class="answer"></p>
+				<div class="close">OM</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<div class="content">
+		<h1>Домашки к четвертому модулю по JS</h1>
+		<div class="buttons">
+			<div id="one" class="button ex1">Задание 1-3</div>
+			<div id="two" class="button ex2">Задание 4</div>
+			<div id="three" class="button ex3">Задание 5</div>
+			<div id="four" class="button ex4">Задание 6</div><br>
+			<div id="five" class="button ex5">Задание 7,8</div>
+			<div id="six" class="button ex6">Задание 9</div>
+			<div id="one" class="button ex7">Задание 10</div>
+			<div id="two" class="button ex8">Задание 11</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
